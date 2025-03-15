@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wira Clinic E-Catalogue</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #c00000, #1b2cb0); color: white; text-align: center; }
+        .container { max-width: 800px; margin: 50px auto; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); color: black; position: relative; }
+        .clinic-logo { width: 150px; height: auto; margin: 0 auto 10px; }
+        .clinic-title { font-size: 30px; font-weight: bold; margin-bottom: 10px; }
+        h1 { font-size: 26px; font-weight: bold; }
+        .service-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+        .service { width: 120px; height: 120px; background: rgba(255, 255, 255, 0.95); border-radius: 50%; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); display: flex; align-items: center; justify-content: center; font-weight: bold; cursor: pointer; transition: transform 0.3s ease-in-out; text-decoration: none; color: black; position: relative; overflow: hidden; }
+        .service:hover { transform: scale(1.1); background: #f0f0f0; }
+        .service img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; position: absolute; top: 0; left: 0; }
+        .service span { position: relative; z-index: 2; background: rgba(0, 0, 0, 0.5); color: white; padding: 5px; border-radius: 5px; font-size: 14px; }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        .whatsapp-float:hover { background-color: #1ebe57; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Wira Clinic Logo" class="clinic-logo">
+        <h1 id="title">Kesihatan Anak Anda, Keutamaan Kami</h1>
+        <div class="service-container">
+            <a href="https://api.whatsapp.com/send?phone=60123456789&text=Hi%20Wira%20Clinic,%20Saya%20berminat%20tentang%20sunat." class="service">
+                <img src="sunat.jpg" alt="Sunat">
+                <span>✅ Sunat</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=60123456789&text=Hi%20Wira%20Clinic,%20Saya%20berminat%20tentang%20vaksin." class="service">
+                <img src="vaccine.jpg" alt="Vaksin">
+                <span>💉 Vaksin</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=60123456789&text=Hi%20Wira%20Clinic,%20Saya%20berminat%20tentang%20saringan%20kesihatan." class="service">
+                <img src="screening.jpg" alt="Saringan">
+                <span>🏥 Saringan</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=60123456789&text=Hi%20Wira%20Clinic,%20Saya%20berminat%20tentang%20pemeriksaan%20kesihatan." class="service">
+                <img src="checkup.jpg" alt="Pemeriksaan">
+                <span>🩺 Pemeriksaan Kesihatan</span>
+            </a>
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=60123456789&text=Hi%20Wira%20Clinic,%20Saya%20berminat%20dengan%20perkhidmatan%20anda." class="whatsapp-float" target="_blank">📲</a>
+    <div class="footer">&copy; 2025 Wira Clinic. Semua Hakcipta Terpelihara.</div>
+</body>
+</html>
